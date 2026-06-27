@@ -1,0 +1,29 @@
+version: "3.6"
+
+services:
+  a4h2022:
+    container_name: "a4h2022"
+    image: "jfbecerra/abap_trial_2022:latest"
+    hostname: "vhcala4hci"
+    privileged: true
+    ipc: host
+    entrypoint:
+      - "/usr/local/bin/abaptrialinit"
+    command:
+      - "-skip-limits-check"
+    environment:
+      - "ABAP_TRIAL_HOSTNAME=vhcala4hci"
+      - "ABAP_TRIAL_DETACH_PWD=ABAPtr2022#00"
+    ports:
+      - "3200:3200/tcp"
+      - "3300:3300/tcp"
+      - "10.8.0.2:8080:8000/tcp"
+      - "8443:8443/tcp"
+    volumes:
+      - "/mnt/abap-ssd/sap_data:/var/lib/sap"
+    ulimits:                           # NEU: Hebt das letzte Datei-Limit direkt im Container auf
+      nofile:
+        soft: 1048576
+        hard: 1048576
+
+
