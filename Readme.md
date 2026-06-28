@@ -32,7 +32,7 @@ sudo nano /etc/sysctl.conf
 - fs.aio-max-nr=18446744073709551615
 - kernel.shmmni=32768
 
-Default ABAP User
+### Default ABAP User für RFC in VScode oder Eclipse
 
 - Client: 001
 - User: DEVELOPER
