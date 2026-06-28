@@ -34,8 +34,8 @@ sudo nano /etc/sysctl.conf
 
 Default ABAP User
 
-Client: 001
-User: DEVELOPER
-Password: ABAPtr2022#00
+- Client: 001
+- User: DEVELOPER
+- Password: ABAPtr2022#00
 
 Ende
