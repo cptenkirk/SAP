@@ -38,4 +38,10 @@ sudo nano /etc/sysctl.conf
 - User: DEVELOPER
 - Password: ABAPtr2022#00
 
+### Falls du dein ABAP-Container Herunterfahren willst in nutze ein sicheren Shutdown Befehl
+
+docker stop -t 3600 <"container name"> 
+
+oder optional um das System komplett herunterzufahren "docker stop -t 3600 <"container name"> ; sudo shutdown -h now"
+
 Ende
