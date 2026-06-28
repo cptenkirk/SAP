@@ -26,7 +26,7 @@ bash
 
 sudo nano /etc/sysctl.conf
 
-#### Füge ganz unten am Ende der Datei diese drei Zeilen ein
+#### Füge ganz unten am Ende der Datei sysctl.conf diese drei Zeilen ein
 
 - textvm.max_map_count=2147483647
 - fs.aio-max-nr=18446744073709551615
