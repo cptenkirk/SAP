@@ -32,4 +32,10 @@ textvm.max_map_count=2147483647
 fs.aio-max-nr=18446744073709551615
 kernel.shmmni=32768
 
-Ende
+
+
+Default ABAP User
+
+Client: 001
+User: DEVELOPER
+Password: ABAPtr2022#00
